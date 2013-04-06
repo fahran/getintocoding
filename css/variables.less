@@ -59,7 +59,7 @@
 @baseLineHeight:        21px;
 @altFontFamily:         @serifFontFamily;
 
-@headingsFontFamily:    inherit; // empty to use BS default, @baseFontFamily
+@headingsFontFamily:    'Oswald', @sansFontFamily; // empty to use BS default, @baseFontFamily
 @headingsFontWeight:    normal;    // instead of browser default, bold
 @headingsColor:         @tropiteal; // empty to use BS default, @textColor
 
@@ -192,21 +192,21 @@
 @navbarBorder:                    @grayLight;
 
 @navbarText:                      @textColor;
-@navbarLinkColor:                 @textColor;
+@navbarLinkColor:                 @tropiteal;
 @navbarLinkColorHover:            @linkColor;
 @navbarLinkColorActive:           @linkColor;
 @navbarLinkBackgroundHover:       transparent;
 @navbarLinkBackgroundActive:      transparent;
 
-@navbarBrandColor:                @navbarLinkColor;
+@navbarBrandColor:                @tropiteal;
 
 // Inverted navbar
-@navbarInverseBackground:                @tealDrop;
+@navbarInverseBackground:                @atomicBikini;
 @navbarInverseBackgroundHighlight:       lighten(@navbarInverseBackground, 10%);
 @navbarInverseBorder:                    darken(@navbarInverseBackground, 3%);
 
 @navbarInverseText:                      @whiteTrash;
-@navbarInverseLinkColor:                 @whiteTrash;
+@navbarInverseLinkColor:                 @tropiteal;
 @navbarInverseLinkColorHover:            @grayLighter;
 @navbarInverseLinkColorActive:           @grayLighter;
 @navbarInverseLinkBackgroundHover:       transparent;
@@ -278,7 +278,7 @@
 // Default 940px grid
 // -------------------------
 @gridColumns:             12;
-@gridColumnWidth:         60px;
+@gridColumnWidth:         100px;
 @gridGutterWidth:         20px;
 @gridRowWidth:            (@gridColumns * @gridColumnWidth) + (@gridGutterWidth * (@gridColumns - 1));
 
